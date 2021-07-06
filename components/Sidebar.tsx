@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { GiTie } from "react-icons/gi";
@@ -7,7 +6,8 @@ import { GoLocation } from "react-icons/go";
 function Sidebar() {
 	return (
 		<div>
-			<Image
+			{/* eslint-disable-next-line @next/next/no-img-element */}
+			<img
 				src="https://lh3.googleusercontent.com/a-/AOh14GgsHg_KetTjfrUR5fh_cX7K1csamPOXJane_O0KhA=s288-p-rw-no"
 				alt="user avatar"
 				className="w-32 h-32 mx-auto rounded-full"
@@ -37,7 +37,6 @@ function Sidebar() {
 					<AiFillYoutube className="w-8 h-8 cursor-pointer" />
 				</a>
 			</div>
-
 			{/* address */}
 			<div
 				className="py-4 my-5 bg-gray-200"
@@ -50,7 +49,6 @@ function Sidebar() {
 				<p className="my-2">code.xamil@gamil.com</p>
 				<p className="my-2">01881965587</p>
 			</div>
-
 			{/* Email Button */}
 			<button
 				className="w-8/12 px-5 py-2 my-2 text-white rounded-full focus:outline-none bg-gradient-to-r from-green to-blue-400"

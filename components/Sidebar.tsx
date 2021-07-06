@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { GiTie } from "react-icons/gi";
@@ -6,7 +7,7 @@ import { GoLocation } from "react-icons/go";
 function Sidebar() {
 	return (
 		<div>
-			<img
+			<Image
 				src="https://lh3.googleusercontent.com/a-/AOh14GgsHg_KetTjfrUR5fh_cX7K1csamPOXJane_O0KhA=s288-p-rw-no"
 				alt="user avatar"
 				className="w-32 h-32 mx-auto rounded-full"

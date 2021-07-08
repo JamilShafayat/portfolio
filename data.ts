@@ -46,32 +46,32 @@ export const services: IService[] = [
 export const languages: ISkill[] = [
 	{
 		name: "PHP",
-		level: "10%",
+		level: "40%",
 		Icon: BsCircleFill,
 	},
 	{
 		name: "JavaScript",
-		level: "10%",
+		level: "45%",
 		Icon: BsCircleFill,
 	},
 	{
 		name: "Python",
-		level: "10%",
+		level: "35%",
 		Icon: BsCircleFill,
 	},
 	{
 		name: "Laravel",
-		level: "10%",
+		level: "55%",
 		Icon: BsCircleFill,
 	},
 	{
 		name: "Rect",
-		level: "10%",
+		level: "35%",
 		Icon: BsCircleFill,
 	},
 	{
 		name: "Next",
-		level: "10%",
+		level: "30%",
 		Icon: BsCircleFill,
 	},
 ];
@@ -79,32 +79,32 @@ export const languages: ISkill[] = [
 export const tools: ISkill[] = [
 	{
 		name: "Postman",
-		level: "10%",
+		level: "50%",
 		Icon: BsCircleFill,
 	},
 	{
 		name: "Swagger",
-		level: "10%",
+		level: "40%",
 		Icon: BsCircleFill,
 	},
 	{
 		name: "Python",
-		level: "10%",
+		level: "35%",
 		Icon: BsCircleFill,
 	},
 	{
 		name: "Laravel",
-		level: "10%",
+		level: "55%",
 		Icon: BsCircleFill,
 	},
 	{
 		name: "Rect",
-		level: "10%",
+		level: "35%",
 		Icon: BsCircleFill,
 	},
 	{
 		name: "Next",
-		level: "10%",
+		level: "30%",
 		Icon: BsCircleFill,
 	},
 ];

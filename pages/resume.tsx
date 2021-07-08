@@ -1,3 +1,6 @@
+import Bar from "../components/Bar";
+import { languages, tools } from "../data";
+
 function resume() {
 	return (
 		<div className="px-6 py-2">
@@ -24,6 +27,26 @@ function resume() {
 							lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
 							ipsumlorem ipsumlorem ipsum
 						</p>
+					</div>
+				</div>
+			</div>
+
+			<div className="grid gap-6 md:grid-cols-2">
+				<div>
+					<h5 className="my-3 text-2xl font-bold">Languages & Frameworks</h5>
+					<div className="my-2">
+						{languages.map((language) => (
+							<Bar key={language.name} data={language} />
+						))}
+					</div>
+				</div>
+
+				<div>
+					<h5 className="my-3 text-2xl font-bold">Tools & Softwares</h5>
+					<div className="my-2">
+						{tools.map((tool) => (
+							<Bar key={tool.name} data={tool} />
+						))}
 					</div>
 				</div>
 			</div>

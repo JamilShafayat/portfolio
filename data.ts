@@ -1,8 +1,9 @@
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
+import { BsCircleFill } from "react-icons/bs";
 import { FaServer } from "react-icons/fa";
 import { MdDeveloperMode } from "react-icons/md";
 import { RiComputerLine } from "react-icons/ri";
-import { IService } from "./type";
+import { IService, ISkill } from "./type";
 
 export const services: IService[] = [
 	{
@@ -39,5 +40,71 @@ export const services: IService[] = [
 		title: "Whatever",
 		about:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+	},
+];
+
+export const languages: ISkill[] = [
+	{
+		name: "PHP",
+		level: "10%",
+		Icon: BsCircleFill,
+	},
+	{
+		name: "JavaScript",
+		level: "10%",
+		Icon: BsCircleFill,
+	},
+	{
+		name: "Python",
+		level: "10%",
+		Icon: BsCircleFill,
+	},
+	{
+		name: "Laravel",
+		level: "10%",
+		Icon: BsCircleFill,
+	},
+	{
+		name: "Rect",
+		level: "10%",
+		Icon: BsCircleFill,
+	},
+	{
+		name: "Next",
+		level: "10%",
+		Icon: BsCircleFill,
+	},
+];
+
+export const tools: ISkill[] = [
+	{
+		name: "Postman",
+		level: "10%",
+		Icon: BsCircleFill,
+	},
+	{
+		name: "Swagger",
+		level: "10%",
+		Icon: BsCircleFill,
+	},
+	{
+		name: "Python",
+		level: "10%",
+		Icon: BsCircleFill,
+	},
+	{
+		name: "Laravel",
+		level: "10%",
+		Icon: BsCircleFill,
+	},
+	{
+		name: "Rect",
+		level: "10%",
+		Icon: BsCircleFill,
+	},
+	{
+		name: "Next",
+		level: "10%",
+		Icon: BsCircleFill,
 	},
 ];

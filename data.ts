@@ -3,7 +3,7 @@ import { BsCircleFill } from "react-icons/bs";
 import { FaServer } from "react-icons/fa";
 import { MdDeveloperMode } from "react-icons/md";
 import { RiComputerLine } from "react-icons/ri";
-import { IService, ISkill } from "./type";
+import { IProject, IService, ISkill } from "./type";
 
 export const services: IService[] = [
 	{
@@ -106,5 +106,89 @@ export const tools: ISkill[] = [
 		name: "Next",
 		level: "30%",
 		Icon: BsCircleFill,
+	},
+];
+
+export const allProjects: IProject[] = [
+	{
+		name: "Ecommerce",
+		description: "This project was bootstrapped with Create React App.",
+		image_path: "/images/store.jpg",
+		deployed_url: "https://github.com/JamilShafayat/react-ecommerce",
+		github_url: "https://github.com/JamilShafayat/react-ecommerce",
+		category: ["react"],
+		key_techs: ["React", "Node", "TS"],
+	},
+	{
+		name: "Ecommerce",
+		description: "This project was bootstrapped with Create React App.",
+		image_path: "/images/tweetme.jpg",
+		deployed_url: "https://github.com/JamilShafayat/react-ecommerce",
+		github_url: "https://github.com/JamilShafayat/react-ecommerce",
+		category: ["react"],
+		key_techs: ["React"],
+	},
+	{
+		name: "Ecommerce",
+		description: "This project was bootstrapped with Create React App.",
+		image_path: "/images/covid.jpg",
+		deployed_url: "https://github.com/JamilShafayat/react-ecommerce",
+		github_url: "https://github.com/JamilShafayat/react-ecommerce",
+		category: ["react"],
+		key_techs: ["React"],
+	},
+	{
+		name: "Ecommerce",
+		description: "This project was bootstrapped with Create React App.",
+		image_path: "/images/portfolio.jpg",
+		deployed_url: "https://github.com/JamilShafayat/react-ecommerce",
+		github_url: "https://github.com/JamilShafayat/react-ecommerce",
+		category: ["react"],
+		key_techs: ["React"],
+	},
+	{
+		name: "Ecommerce",
+		description: "This project was bootstrapped with Create React App.",
+		image_path: "/images/newYear.jpg",
+		deployed_url: "https://github.com/JamilShafayat/react-ecommerce",
+		github_url: "https://github.com/JamilShafayat/react-ecommerce",
+		category: ["react"],
+		key_techs: ["React"],
+	},
+	{
+		name: "Ecommerce",
+		description: "This project was bootstrapped with Create React App.",
+		image_path: "/images/algoVisual.png",
+		deployed_url: "https://github.com/JamilShafayat/react-ecommerce",
+		github_url: "https://github.com/JamilShafayat/react-ecommerce",
+		category: ["react"],
+		key_techs: ["React"],
+	},
+	{
+		name: "Ecommerce",
+		description: "This project was bootstrapped with Create React App.",
+		image_path: "/images/newYear.jpg",
+		deployed_url: "https://github.com/JamilShafayat/react-ecommerce",
+		github_url: "https://github.com/JamilShafayat/react-ecommerce",
+		category: ["react"],
+		key_techs: ["React"],
+	},
+	{
+		name: "Ecommerce",
+		description: "This project was bootstrapped with Create React App.",
+		image_path: "/images/algoVisual.png",
+		deployed_url: "https://github.com/JamilShafayat/react-ecommerce",
+		github_url: "https://github.com/JamilShafayat/react-ecommerce",
+		category: ["react"],
+		key_techs: ["React"],
+	},
+	{
+		name: "Ecommerce",
+		description: "This project was bootstrapped with Create React App.",
+		image_path: "/images/newYear.jpg",
+		deployed_url: "https://github.com/JamilShafayat/react-ecommerce",
+		github_url: "https://github.com/JamilShafayat/react-ecommerce",
+		category: ["react"],
+		key_techs: ["React"],
 	},
 ];

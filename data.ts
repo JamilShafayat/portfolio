@@ -61,12 +61,12 @@ export const languages: ISkill[] = [
 	},
 	{
 		name: "Laravel",
-		level: "55%",
+		level: "70%",
 		Icon: BsCircleFill,
 	},
 	{
 		name: "Rect",
-		level: "35%",
+		level: "50%",
 		Icon: BsCircleFill,
 	},
 	{

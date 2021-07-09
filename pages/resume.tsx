@@ -44,8 +44,8 @@ function resume() {
 				<div>
 					<h5 className="my-3 text-2xl font-bold">Tools & Softwares</h5>
 					<div className="my-2">
-						{tools.map((tool) => (
-							<Bar key={tool.name} data={tool} />
+						{tools.map((tool, i) => (
+							<Bar key={i} data={tool} />
 						))}
 					</div>
 				</div>

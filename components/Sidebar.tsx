@@ -1,4 +1,5 @@
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { GiTie } from "react-icons/gi";
@@ -11,11 +12,14 @@ function Sidebar() {
 	};
 	return (
 		<>
-			{/* eslint-disable-next-line @next/next/no-img-element */}
-			<img
+			<Image
 				src="https://lh3.googleusercontent.com/a-/AOh14GgsHg_KetTjfrUR5fh_cX7K1csamPOXJane_O0KhA=s288-p-rw-no"
 				alt="user avatar"
-				className="w-32 h-32 mx-auto rounded-full"
+				className="mx-auto rounded-full"
+				width="128px"
+				height="128px"
+				layout="intrinsic"
+				quality="100"
 			/>
 			<h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
 				<span className="text-green">Jamil </span>

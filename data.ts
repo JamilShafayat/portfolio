@@ -152,7 +152,7 @@ export const allProjects: IProject[] = [
 		image_path: "/images/newYear.jpg",
 		deployed_url: "https://github.com/JamilShafayat/react-ecommerce",
 		github_url: "https://github.com/JamilShafayat/react-ecommerce",
-		category: ["react"],
+		category: ["node"],
 		key_techs: ["React"],
 	},
 	{

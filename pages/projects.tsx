@@ -1,10 +1,11 @@
 import ProjectCard from "../components/ProjectCard";
+import ProjectsNavbar from "../components/ProjectNavbar";
 import { allProjects } from "../data";
 
 function projects() {
 	return (
 		<div className="px-5 py-2 overflow-scroll" style={{ height: "65vh" }}>
-			<nav>Navbar</nav>
+			<ProjectsNavbar />
 			<div className="relative grid grid-cols-12 gap-4 my-3">
 				{allProjects.map((project, id) => (
 					<div

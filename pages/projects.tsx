@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
+import { stagger } from "../animations";
 import ProjectCard from "../components/ProjectCard";
 import ProjectsNavbar from "../components/ProjectNavbar";
 import { allProjects } from "../data";
@@ -28,7 +30,12 @@ const Projects = () => {
 				handleFilterCategory={handlerFilterCategory}
 				active={active}
 			/>
-			<div className="relative grid grid-cols-12 gap-4 my-3">
+			<motion.div
+				className="relative grid grid-cols-12 gap-4 my-3"
+				variants={stagger}
+				initial="initial"
+				animate="animate"
+			>
 				{projects.map((project, id) => (
 					<div
 						key={id}
@@ -37,7 +44,7 @@ const Projects = () => {
 						<ProjectCard project={project} />
 					</div>
 				))}
-			</div>
+			</motion.div>
 		</div>
 	);
 };

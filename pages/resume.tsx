@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { fadeInUP } from "../animations";
 import Bar from "../components/Bar";
 import { languages, tools } from "../data";
 
@@ -5,7 +7,7 @@ function resume() {
 	return (
 		<div className="px-6 py-2">
 			<div className="grid gap-6 md:grid-cols-2">
-				<div className="">
+				<motion.div variants={fadeInUP} initial="initial" animate="animate">
 					<h5 className="my-3 text-2xl font-bold">Education</h5>
 					<div>
 						<h5 className="my-3 text-xl font-bold">
@@ -17,8 +19,8 @@ function resume() {
 							ipsumlorem ipsumlorem ipsum
 						</p>
 					</div>
-				</div>
-				<div className="">
+				</motion.div>
+				<motion.div variants={fadeInUP} initial="initial" animate="animate">
 					<h5 className="my-3 text-2xl font-bold">Experience</h5>
 					<div>
 						<h5 className="my-3 text-xl font-bold">Software Developer</h5>
@@ -28,7 +30,7 @@ function resume() {
 							ipsumlorem ipsumlorem ipsum
 						</p>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 
 			<div className="grid gap-6 md:grid-cols-2">

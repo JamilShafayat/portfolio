@@ -1,4 +1,6 @@
 // import { GetStaticPropsContext } from "next";
+import { motion } from "framer-motion";
+import { fadeInUP, stagger } from "../animations";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 
@@ -19,16 +21,22 @@ function index() {
 					What I Offer
 				</h6>
 
-				<div className="grid gap-6 my-3 md:grid-cols-2">
+				<motion.div
+					className="grid gap-6 my-3 md:grid-cols-2"
+					variants={stagger}
+					initial="initial"
+					animate="animate"
+				>
 					{services.map((service: any, index) => (
-						<div
+						<motion.div
+							variants={fadeInUP}
 							key={index}
 							className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 md:col-span-1"
 						>
 							<ServiceCard service={service} />
-						</div>
+						</motion.div>
 					))}
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	);

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { stagger } from "../animations";
+import { fadeInUP, stagger } from "../animations";
 import ProjectCard from "../components/ProjectCard";
 import ProjectsNavbar from "../components/ProjectNavbar";
 import { allProjects } from "../data";
@@ -37,12 +37,13 @@ const Projects = () => {
 				animate="animate"
 			>
 				{projects.map((project, id) => (
-					<div
+					<motion.div
+						variants={fadeInUP}
 						key={id}
 						className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200"
 					>
 						<ProjectCard project={project} />
-					</div>
+					</motion.div>
 				))}
 			</motion.div>
 		</div>

@@ -1,15 +1,15 @@
 // import { GetStaticPropsContext } from "next";
 import { motion } from "framer-motion";
-import { fadeInUP, stagger } from "../animations";
+import { fadeInUP, routerAnimation, stagger } from "../animations";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 
 function index() {
 	return (
-		<div className="flex flex-col flex-grow px-6 pt-1">
+		<motion.div className="flex flex-col flex-grow px-6 pt-1" variants={routerAnimation} initial="initial" animate="animate">
 			<h5 className="my-3 font-medium">
 				Lorem Ipsum is simply dummy text of the printing and typesetting
-				industry. Lorem Ipsum has been the industrys standard dummy text ever
+				industry. Lorem Ipsum has been the industries standard dummy text ever
 				since the 1500s, when an unknown printer took a galley of type and
 				scrambled it to make a type specimen book.
 			</h5>
@@ -38,7 +38,7 @@ function index() {
 					))}
 				</motion.div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { fadeInUP, stagger } from "../animations";
+import { fadeInUP, routerAnimation, stagger } from "../animations";
 import ProjectCard from "../components/ProjectCard";
 import ProjectsNavbar from "../components/ProjectNavbar";
 import { allProjects } from "../data";
@@ -25,7 +25,7 @@ const Projects = () => {
 	};
 
 	return (
-		<div className="px-5 py-2 overflow-scroll" style={{ height: "65vh" }}>
+		<motion.div className="px-5 py-2 overflow-scroll" style={{ height: "65vh" }} variants={routerAnimation} initial="initial" animate="animate">
 			<ProjectsNavbar
 				handleFilterCategory={handlerFilterCategory}
 				active={active}
@@ -46,7 +46,7 @@ const Projects = () => {
 					</motion.div>
 				))}
 			</motion.div>
-		</div>
+		</motion.div>
 	);
 };
 

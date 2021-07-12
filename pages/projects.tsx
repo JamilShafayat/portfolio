@@ -25,7 +25,7 @@ const Projects = () => {
 	};
 
 	return (
-		<motion.div className="px-5 py-2 overflow-scroll" style={{ height: "65vh" }} variants={routerAnimation} initial="initial" animate="animate">
+		<motion.div className="px-5 py-2 overflow-scroll" style={{ height: "65vh" }} variants={routerAnimation} initial="initial" animate="animate" exit="exit">
 			<ProjectsNavbar
 				handleFilterCategory={handlerFilterCategory}
 				active={active}

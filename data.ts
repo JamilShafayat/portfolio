@@ -174,7 +174,7 @@ export const allProjects: IProject[] = [
 		id: 7,
 		name: "Ecommerce",
 		description: "This project was bootstrapped with Create React App.",
-		image_path: "/images/chapter.jpg",
+		image_path: "/images/chatapp.jpg",
 		deployed_url: "https://github.com/JamilShafayat/react-ecommerce",
 		github_url: "https://github.com/JamilShafayat/react-ecommerce",
 		category: ["react"],

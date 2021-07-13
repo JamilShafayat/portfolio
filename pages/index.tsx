@@ -4,9 +4,15 @@ import { fadeInUP, routerAnimation, stagger } from "../animations";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 
-function index() {
+const About = () => {
 	return (
-		<motion.div className="flex flex-col flex-grow px-6 pt-1" variants={routerAnimation} initial="initial" animate="animate" exit="exit">
+		<motion.div
+			className="flex flex-col flex-grow px-6 pt-1"
+			variants={routerAnimation}
+			initial="initial"
+			animate="animate"
+			exit="exit"
+		>
 			<h5 className="my-3 font-medium">
 				Lorem Ipsum is simply dummy text of the printing and typesetting
 				industry. Lorem Ipsum has been the industries standard dummy text ever
@@ -40,9 +46,9 @@ function index() {
 			</div>
 		</motion.div>
 	);
-}
+};
 
-export default index;
+export default About;
 
 // export const getServerSideProps = async (
 // 	context: GetServerSidePropsContext

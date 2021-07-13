@@ -9,6 +9,7 @@ import { Category } from "../type";
 const Projects = () => {
 	const [projects, setProjects] = useState(allProjects);
 	const [active, setActive] = useState("all");
+	const [showDetails, setShowDetails] = useState<number | null>(null);
 
 	const handlerFilterCategory = (category: Category | "all") => {
 		if (category === "all") {
@@ -20,12 +21,20 @@ const Projects = () => {
 		const newArray = allProjects.filter((project) =>
 			project.category.includes(category)
 		);
+
 		setProjects(newArray);
 		setActive(category);
 	};
 
 	return (
-		<motion.div className="px-5 py-2 overflow-scroll" style={{ height: "65vh" }} variants={routerAnimation} initial="initial" animate="animate" exit="exit">
+		<motion.div
+			className="px-5 py-2 overflow-scroll"
+			style={{ height: "65vh" }}
+			variants={routerAnimation}
+			initial="initial"
+			animate="animate"
+			exit="exit"
+		>
 			<ProjectsNavbar
 				handleFilterCategory={handlerFilterCategory}
 				active={active}
@@ -42,7 +51,11 @@ const Projects = () => {
 						key={id}
 						className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200"
 					>
-						<ProjectCard project={project} />
+						<ProjectCard
+							project={project}
+							showDetails={showDetails}
+							setShowDetails={setShowDetails}
+						/>
 					</motion.div>
 				))}
 			</motion.div>

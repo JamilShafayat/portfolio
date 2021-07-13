@@ -111,6 +111,7 @@ export const tools: ISkill[] = [
 
 export const allProjects: IProject[] = [
 	{
+		id: 1,
 		name: "Ecommerce",
 		description: "This project was bootstrapped with Create React App.",
 		image_path: "/images/store.jpg",
@@ -120,6 +121,7 @@ export const allProjects: IProject[] = [
 		key_techs: ["React", "Node", "TS"],
 	},
 	{
+		id: 2,
 		name: "Ecommerce",
 		description: "This project was bootstrapped with Create React App.",
 		image_path: "/images/tweetme.jpg",
@@ -129,6 +131,7 @@ export const allProjects: IProject[] = [
 		key_techs: ["React"],
 	},
 	{
+		id: 3,
 		name: "Ecommerce",
 		description: "This project was bootstrapped with Create React App.",
 		image_path: "/images/covid.jpg",
@@ -138,6 +141,7 @@ export const allProjects: IProject[] = [
 		key_techs: ["React"],
 	},
 	{
+		id: 4,
 		name: "Ecommerce",
 		description: "This project was bootstrapped with Create React App.",
 		image_path: "/images/portfolio.jpg",
@@ -147,6 +151,7 @@ export const allProjects: IProject[] = [
 		key_techs: ["React"],
 	},
 	{
+		id: 5,
 		name: "Ecommerce",
 		description: "This project was bootstrapped with Create React App.",
 		image_path: "/images/newYear.jpg",
@@ -156,6 +161,7 @@ export const allProjects: IProject[] = [
 		key_techs: ["React"],
 	},
 	{
+		id: 6,
 		name: "Ecommerce",
 		description: "This project was bootstrapped with Create React App.",
 		image_path: "/images/algoVisual.png",
@@ -165,6 +171,7 @@ export const allProjects: IProject[] = [
 		key_techs: ["React"],
 	},
 	{
+		id: 7,
 		name: "Ecommerce",
 		description: "This project was bootstrapped with Create React App.",
 		image_path: "/images/newYear.jpg",
@@ -174,6 +181,7 @@ export const allProjects: IProject[] = [
 		key_techs: ["React"],
 	},
 	{
+		id: 8,
 		name: "Ecommerce",
 		description: "This project was bootstrapped with Create React App.",
 		image_path: "/images/algoVisual.png",
@@ -183,6 +191,7 @@ export const allProjects: IProject[] = [
 		key_techs: ["React"],
 	},
 	{
+		id: 9,
 		name: "Ecommerce",
 		description: "This project was bootstrapped with Create React App.",
 		image_path: "/images/newYear.jpg",

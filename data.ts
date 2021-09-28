@@ -66,12 +66,12 @@ export const languages: ISkill[] = [
 	},
 	{
 		name: "Rect",
-		level: "50%",
+		level: "60%",
 		Icon: BsCircleFill,
 	},
 	{
 		name: "Next",
-		level: "40%",
+		level: "50%",
 		Icon: BsCircleFill,
 	},
 ];
